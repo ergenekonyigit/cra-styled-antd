@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import { Header, AppLogo, Button } from './App.style';
+import { Header, AppLogo } from './App.style';
+import { RoundedButton } from './components/Button';
 import 'styled-components/macro';
 
 class App extends Component {
@@ -12,7 +13,7 @@ class App extends Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <Button onClick={() => window.location.href='https://reactjs.org'}>Learn React</Button>
+          <RoundedButton ghost onClick={() => window.location.href='https://reactjs.org'}>Learn React</RoundedButton>
         </Header>
       </div>
     );

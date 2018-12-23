@@ -1,6 +1,4 @@
-import AntButton from 'antd/lib/button';
 import styled, { keyframes } from 'styled-components/macro';
-import 'antd/lib/button/style/css';
 
 export const Header = styled.header`
   background-color: #282c34;
@@ -27,14 +25,3 @@ export const AppLogo = styled.img`
   height: 40vmin;
 `;
 
-export const Button = styled(AntButton)`
-  background-color: #2e81e8;
-  border-color: #276ec5;
-  color: #ffffff;
-
-  &:hover {
-    background-color: #276ec5;
-    border-color: #276ec5;
-    color: #ffffff;
-  }
-`;
