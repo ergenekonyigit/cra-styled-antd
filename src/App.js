@@ -1,25 +1,19 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import { Header, AppLogo, Button } from './App.style';
+import 'styled-components/macro';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+      <div css="text-align: center">
+        <Header>
+          <AppLogo src={logo} alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+          <Button onClick={() => window.location.href='https://reactjs.org'}>Learn React</Button>
+        </Header>
       </div>
     );
   }
